@@ -9,7 +9,8 @@ import { Employee } from '../models/employee.model';
 export class Home {
   languages = ["English", "Spanish", "Other"];
 
-  model = new Employee('Darla', 'Smith', false, 'w2', 'English');
+  model = new Employee('Darla', 'Smith', false, 'w2', 'default');
+  hasPrimaryLanguageError = false;
 
   firstNameToUpperCase(value: string){
     if (value.length > 0) {
